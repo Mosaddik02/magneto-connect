@@ -2,6 +2,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Facebook, Twitter, Linkedin, Instagram, Mail, Phone } from 'lucide-react';
+import PrivacyPolicy from './PrivacyPolicy';
 
 const Footer = () => {
   return (
@@ -78,7 +79,7 @@ const Footer = () => {
             <ul className="space-y-3">
               <li className="flex items-center gap-2">
                 <Mail size={16} className="text-primary" />
-                <a href="mailto:hello@growthmagnetai.com" className="text-foreground/70 hover:text-primary transition-colors">hello@growthmagnetai.com</a>
+                <a href="mailto:bhavesh@growthmagnet.ai" className="text-foreground/70 hover:text-primary transition-colors">bhavesh@growthmagnet.ai</a>
               </li>
               <li className="flex items-center gap-2">
                 <Phone size={16} className="text-primary" />
@@ -93,7 +94,7 @@ const Footer = () => {
           <div className="mt-4 md:mt-0">
             <ul className="flex flex-wrap gap-6">
               <li><a href="#" className="hover:text-primary transition-colors">Terms</a></li>
-              <li><a href="#" className="hover:text-primary transition-colors">Privacy</a></li>
+              <li><PrivacyPolicy /></li>
               <li><a href="#" className="hover:text-primary transition-colors">Cookies</a></li>
             </ul>
           </div>
